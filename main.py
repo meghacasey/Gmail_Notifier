@@ -21,10 +21,10 @@ m = imaplib.IMAP4_SSL(“imap.gmail.com”)
 #Login with username and password
 try:
  m.login(username,passwrd)
- print “Login Successful”
+ print “Login Successful!”
 
 except imaplib.IMAP4.error:
- print “Login Failed”
+ print “Login Failed!”
  m.logout()
  sys.exit()
 
@@ -55,7 +55,7 @@ while True:                                 #Constantly checks whether a new mai
                   print ’%-8s: %s’ % (header.upper(), msg[header])
       print “\n”
       print “Press the Blue Button to Display the Message…….”
-      print “Press the Red Button to reset the Message…….”
+      print “Press the Red Button to Reset the Message…….”
 
       while reset!=1:
          GPIO.output(13,GPIO.HIGH)
@@ -79,7 +79,7 @@ while True:                                 #Constantly checks whether a new mai
               reset=1
          if inputval_red==True:
               reset=1
-              print “\nMessage Resetted”
+              print “\nMessage Reset”
 
       n=n_new
   time.sleep(0.01)
