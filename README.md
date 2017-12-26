@@ -22,3 +22,5 @@ The notification continues till the user has made a decision.
   * Raspberry Pi User Guide – Eben Upton
   * Getting Started with Raspberry Pi – Matt Richardson & Shawn Wallace
 
+### **License**
+MIT License.
