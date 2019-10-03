@@ -68,8 +68,7 @@ while True:                                 #Constantly checks whether a new mai
          inputval_red=GPIO.input(11)
 
          if inputval_blue==True:
-              print “\n”
-              print “*************”
+              print “\n*************”
               for header in [ 'subject’, 'from’ ]:
                   print ’%-8s: %s’ % (header.upper(), msg[header])
               print “CONTENT : ”
